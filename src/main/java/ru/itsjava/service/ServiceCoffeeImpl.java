@@ -5,13 +5,13 @@ import lombok.SneakyThrows;
 import ru.itsjava.domain.Coffee;
 
 @RequiredArgsConstructor
-public class ServiceCoffeeImpl implements ServiceCofee {
+public class ServiceCoffeeImpl implements ServiceCoffee {
     private final ServiceMenu menuService;
     private final ServiceScanner scannerService;
 
     @SneakyThrows
     @Override
-    public Coffee getCoffee() {
+    public  Coffee getCoffee() {
         menuService.menu("src/main/resources/price.txt");
 
         Coffee coffee;
