@@ -11,8 +11,8 @@ public class ServiceCoffeeImpl implements ServiceCoffee {
 
     @SneakyThrows
     @Override
-    public  Coffee getCoffee() {
-        menuService.menu("src/main/resources/price.txt");
+    public Coffee getCoffee() {
+        menuService.menu("price.txt");
 
         Coffee coffee;
         while (true) {

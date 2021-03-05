@@ -6,7 +6,7 @@ import ru.itsjava.service.ServiceCoffeeImpl;
 
 public class App {
     public static void main(String[] args) {
-       ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         context.getBean(ServiceCoffeeImpl.class).getCoffee();
 
     }
