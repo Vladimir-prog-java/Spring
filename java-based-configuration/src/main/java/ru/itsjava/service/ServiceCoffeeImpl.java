@@ -1,13 +1,17 @@
 package ru.itsjava.service;
 
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.beans.factory.annotation.Autowired;
 import ru.itsjava.domain.Coffee;
 
-@RequiredArgsConstructor
 public class ServiceCoffeeImpl implements ServiceCoffee {
     private final ServiceMenu menuService;
     private final ServiceScanner scannerService;
+@Autowired
+    public ServiceCoffeeImpl(ServiceMenu menuService, ServiceScanner scannerService) {
+        this.menuService = menuService;
+        this.scannerService = scannerService;
+    }
 
     @SneakyThrows
     @Override
