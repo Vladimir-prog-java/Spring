@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-xml-CoffeeShop" />
+        <module name="java-based-configuration" />
+        <module name="annotation-based-configuration" />
       </profile>
     </annotationProcessing>
   </component>
