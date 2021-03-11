@@ -11,6 +11,7 @@
     <modules>
         <module>Java-based-configuration</module>
         <module>annotation-based-configuration</module>
+        <module>AOP</module>
     </modules>
 
     <properties>

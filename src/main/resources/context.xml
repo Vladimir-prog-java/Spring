@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="serviceBufferedReader" class="ru.itsjava.service.ServiceMenuImpl"/>
+    <bean id="serviceBufferedReader" class="ru.ServiceMenuImpl"/>
 
-    <bean id="serviceScanner" class="ru.itsjava.service.ServiceScannerImpl"/>
+    <bean id="serviceScanner" class="ru.ServiceScannerImpl"/>
 
-    <bean id="serviceCoffee" class="ru.itsjava.service.ServiceCoffeeImpl">
+    <bean id="serviceCoffee" class="ru.ServiceCoffeeImpl">
         <constructor-arg ref="serviceBufferedReader"/>
         <constructor-arg ref="serviceScanner"/>
     </bean>

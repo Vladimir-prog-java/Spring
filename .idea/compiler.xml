@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="java-based-configuration" />
         <module name="annotation-based-configuration" />
+        <module name="AOP" />
       </profile>
     </annotationProcessing>
   </component>
