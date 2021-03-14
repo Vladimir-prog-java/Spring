@@ -23,6 +23,7 @@ public class ServiceCoffeeImpl implements ServiceCoffee {
                 coffee = new Coffee("Эспрессо");
                 System.out.println("Вы выбрали " + coffee);
                 System.out.print("Спасибо за Ваш заказ!");
+                System.out.println();
                 return coffee;
             } else if (price == 90) {
                 coffee = new Coffee("Американо");
