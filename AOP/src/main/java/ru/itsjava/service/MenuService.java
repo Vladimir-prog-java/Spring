@@ -1,5 +1,5 @@
 package ru.itsjava.service;
 
-public interface ServiceMenu {
+public interface MenuService {
     void menu(String fileName);
 }

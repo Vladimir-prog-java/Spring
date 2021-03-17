@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 @Service
-public class ServiceMenuImpl implements ServiceMenu {
+public class MenuServiceImpl implements MenuService {
 
     @Override
     @SneakyThrows

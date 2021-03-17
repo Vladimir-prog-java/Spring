@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.Scanner;
 
 @Service
-public class ServiceScannerImpl implements ServiceScanner {
+public class ScannerServiceImpl implements ScannerService {
 
     @Override
     public int readPrice() {

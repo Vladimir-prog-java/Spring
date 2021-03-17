@@ -3,13 +3,15 @@ package ru.itsjava.service;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
+import ru.itsjava.dao.CoffeeDao;
 import ru.itsjava.domain.Coffee;
 
 @Service
 @RequiredArgsConstructor
-public class ServiceCoffeeImpl implements ServiceCoffee {
-    private final ServiceMenu menuService;
-    private final ServiceScanner scannerService;
+public class CoffeeServiceImpl implements CoffeeService {
+    private final MenuService menuService;
+    private final ScannerService scannerService;
+   //private final CoffeeDao CoffeeDao;
 
     @SneakyThrows
     @Override
@@ -39,5 +41,9 @@ public class ServiceCoffeeImpl implements ServiceCoffee {
                 System.out.println("Выберите снова!");
             }
         }
+    }
+
+    public Coffee getCoffeeById(long id) {
+        return getCoffeeById(id);
     }
 }

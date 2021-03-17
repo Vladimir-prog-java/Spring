@@ -1,5 +1,5 @@
 package ru.itsjava.service;
 
-public interface ServiceScanner {
+public interface ScannerService {
     int readPrice();
 }

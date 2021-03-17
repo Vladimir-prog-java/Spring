@@ -4,7 +4,8 @@ import org.springframework.stereotype.Repository;
 import ru.itsjava.domain.Coffee;
 
 @Repository
-public class DaoCoffeeImpl implements DaoCoffee {
+public class CoffeeDaoImpl implements CoffeeDao {
+
 
     @Override
     public Coffee getCoffeeById(long coffeeId) {
