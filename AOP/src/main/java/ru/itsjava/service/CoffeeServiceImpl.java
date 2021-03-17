@@ -11,7 +11,7 @@ import ru.itsjava.domain.Coffee;
 public class CoffeeServiceImpl implements CoffeeService {
     private final MenuService menuService;
     private final ScannerService scannerService;
-   //private final CoffeeDao CoffeeDao;
+   private final CoffeeDao coffeeDao;
 
     @SneakyThrows
     @Override
@@ -44,6 +44,6 @@ public class CoffeeServiceImpl implements CoffeeService {
     }
 
     public Coffee getCoffeeById(long id) {
-        return getCoffeeById(id);
+        return coffeeDao.getCoffeeById(id);
     }
 }
